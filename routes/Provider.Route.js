@@ -1,4 +1,4 @@
-const UserController=require("../controllers/Product.Controller");
+const UserController=require("../controllers/Provider.Controller");
 const express=require("express")
 const Router=express.Router();
 Router.post("/",UserController.create)
