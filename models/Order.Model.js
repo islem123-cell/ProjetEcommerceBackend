@@ -1,7 +1,7 @@
 const mongoose = require('mongoose'); // Erase if already required
 
 // Declare the Schema of the Mongo model
-var userSchema = new mongoose.Schema({
+var OrderSchema = new mongoose.Schema({
     ref:{
         type:String,
         required:true,
@@ -14,21 +14,21 @@ var userSchema = new mongoose.Schema({
         unique:true,
     },
     qte_totale:{
-        type:Integer,
+        type:String,
         required:true,
         unique:true,
     },
     price_total:{
-        type:double,
+        type:String,
         required:true,
     },
 
 
     state:{
-        type:Boolean,
+        type:String,
         required:true,
     },
 });
 
 //Export the model
-module.exports = mongoose.model('Order', userSchema);
+module.exports = mongoose.model('Order', OrderSchema);

@@ -1,28 +1,18 @@
 const mongoose = require("mongoose"); // appel du mongoose
-const schemaCategory = new mongoose.Schema({ //schema du collection , contenu du collection
-name: {
+const schemaCategory = new mongoose.Schema({
+  //schema du collection , contenu du collection
+  name: {
     type: String,
     required: true,
-},
-description: {
+  },
+  description: {
     type: String,
-},
-subCategories: [
+  },
+  subCategories: [
     {
-        type: mongoose.Types.ObjectId,
-        ref:'subcategories',
+      type: mongoose.Types.ObjectId,
+      ref: "subcategories",
     },
-],
-},
-);
+  ],
+});
 module.exports = mongoose.model("categories", schemaCategory);
-
-
-
-
-
-
-
-
-
-

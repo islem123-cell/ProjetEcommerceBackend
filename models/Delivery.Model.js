@@ -1,7 +1,7 @@
 const mongoose = require('mongoose'); // Erase if already required
 
 // Declare the Schema of the Mongo model
-var userSchema = new mongoose.Schema({
+var DeliverySchema = new mongoose.Schema({
     adresse:{
         type:String,
         required:true,
@@ -11,4 +11,4 @@ var userSchema = new mongoose.Schema({
 });
 
 //Export the model
-module.exports = mongoose.model('User', userSchema);
+module.exports = mongoose.model('Delivery', DeliverySchema);

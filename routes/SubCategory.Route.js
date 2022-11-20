@@ -1,8 +1,8 @@
-const UserController=require("../controllers/SubCategory.Controller");
+const SubCategoryController=require("../controllers/SubCategory.Controller");
 const express=require("express")
 const Router=express.Router();
-Router.post("/",UserController.create)
-Router.delete("/:id",UserController.delete)
-Router.put("/:id",UserController.update)
-Router.get("/",UserController.read)
+Router.post("/",SubCategoryController.create)
+Router.delete("/:id",SubCategoryController.delete)
+Router.put("/:id",SubCategoryController.update)
+Router.get("/",SubCategoryController.read)
 module.exports=Router;

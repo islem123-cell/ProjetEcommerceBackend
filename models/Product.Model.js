@@ -7,7 +7,7 @@ const schemaProduct = new mongoose.Schema(
       unique: true,
     },
     price: {
-      type: double,
+      type: String,
       required: true,
     },
     description: {
@@ -17,7 +17,7 @@ const schemaProduct = new mongoose.Schema(
   
 
     qte: {
-      type: integer,
+      type: String,
       required: true,
     },
     

@@ -1,8 +1,8 @@
-const UserController=require("../controllers/Order.Controller");
+const OrderController=require("../controllers/Order.Controller");
 const express=require("express")
 const Router=express.Router();
-Router.post("/",UserController.create)
-Router.delete("/:id",UserController.delete)
-Router.put("/:id",UserController.update)
-Router.get("/",UserController.read)
+Router.post("/",OrderController.create)
+Router.delete("/:id",OrderController.delete)
+Router.put("/:id",OrderController.update)
+Router.get("/",OrderController.read)
 module.exports=Router;

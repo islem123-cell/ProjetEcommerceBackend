@@ -12,17 +12,17 @@ var userSchema = new mongoose.Schema({
         type:String,
         required:true,
     },
-    email:{
+    Email:{
         type:String,
         required:true,
         unique:true,
     },
-    phone:{
+    Phone:{
         type:String,
         required:true,
         unique:true,
     },
-    password:{
+    Password:{
         type:String,
         required:true,
     },
